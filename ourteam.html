@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Team | Gentles</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/ourteam.css">
+  <link rel="stylesheet" href="styles/cart.css">
+</head>
+
+<body>
+  <div class="bg-img">
+    <div class="container">
+      <nav id="navbar">
+        <a class="nav-logo" href="#">
+          <img src="images/logo.png" alt="Logo" />
+          <span class="brand-name">Gentles</span>
+        </a>
+        <ul class="nav-list">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="product.html">Products</a></li>
+          <li><a href="aboutus.html">About</a></li>
+          <li><a href="ourteam.html" style="color: rgb(166, 166, 166);">Our Team</a></li>
+          <li><a href="contactus.html">Contact us</a></li>
+        </ul>
+        <div class="nav-img">
+          <a href="#" id="cart-btn"><img src="images/shopping_bag.svg" alt="shopping bag"></a>
+          <a href="login.html"><img src="images/user_profile.svg" alt="user profile"></a>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <div id="cart-popup" class="cart-popup">
+        <h2>Your Cart</h2>
+        <div id="cart-items"></div>
+        <button id="close-cart">Close</button>
+    </div>
+
+  <section class="team-section">
+    <h2 class="section-title">Meet Our Team</h2>
+
+    <div class="team-row">
+      <div class="team-member">
+        <img src="images/andreas.jpg" alt="Amira Tan">
+        <h3>Andreas</h3>
+        <p class="role">Group Member</p>
+        <p>I focused on developing the website. My main contribution are creating login, register, and contact us page. I also work together with my groupmates to ensure best design for the website.</p>
+      </div>
+      <div class="team-member">
+        <img src="images/andrew.jpg" alt="Daniel Lim">
+        <h3>Andrew</h3>
+        <p class="role">Chief Engineer</p>
+        <p>Hi, I'm Andrew and I have a passion for learning and exploring new things to further improve myself and my knowledge on software technology.</p>
+      </div>
+      <div class="team-member">
+        <img src="images/JAMUR.jpg" alt="Sophia Cheng">
+        <h3>Johnatan</h3>
+        <p class="role">Creative Director</p>
+        <p>Sophia brings the Gentles brand to life with her eye for style and storytelling.</p>
+      </div>
+    </div>
+
+    <div class="team-grid-bottom">
+      <div class="team-member">
+        <img src="images/nicholas.jpg" alt="James Wong">
+        <h3>Nicholas</h3>
+        <p class="role">Group membber</p>
+        <p>I contributed to developing the website by focusing on the product page layout and ensuring the navigation and footer were functional and user-friendly. I also worked on identifying bugs and improving the overall design to enhance the user experience.</p>
+      </div>
+      <div class="team-member">
+        <img src="images/sanzhar.jpg" alt="Lina Mah">
+        <h3>Sanzhar</h3>
+        <p class="role">Group Leader</p>
+        <p>My main goal is to lead our group so that everyone would know their tasks, set deadlines, and encouraging all members so the website would be nice.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-section stay-updated">
+      <h2>STAY UPDATED</h2>
+      <p>Don’t miss out on any exclusive offers. Keep in touch through our newsletter.</p>
+      <div class="email-input">
+        <form>
+          <input type="email" placeholder="Your Email Address" />
+          <button type="submit"><span>→</span></button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-section policy-section">
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Accessibility</a>
+        <a href="#">Shopping Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Refund Policy</a>
+      </div>
+    </div>
+    <div class="footer-icons">
+      <img src="images/facebook.png" alt="Facebook" />
+      <img src="images/twitter.png" alt="Twitter" />
+      <img src="images/instagram.png" alt="Instagram" />
+      <img src="images/tiktok.png" alt="TikTok" />
+    </div>
+  </footer>
+  
+  <script>
+    window.addEventListener('scroll', function() {
+    const navbar = document.getElementById('navbar');
+    if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+    } else {
+        navbar.classList.remove('scrolled');
+    }
+    });
+  </script>
+  <script src="scripts/auth.js"></script>
+  <script src="scripts/product.js"></script>
+</body>
+</html>

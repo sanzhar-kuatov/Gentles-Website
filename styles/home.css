@@ -1,0 +1,104 @@
+main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 80px;
+  gap: 50px;
+  margin-top: 100px;
+}
+
+.main-text {
+  max-width: 600px;
+}
+
+.main-text h1 {
+  font-size: 80px;
+  margin: 0 0 30px 0;
+}
+
+.main-text p {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+#explore_button {
+  width: 250px;
+  height: 70px;
+  background-color: white;
+  border: none;
+  border-radius: 90px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#explore_button:hover {
+  background-color: #ccc;
+}
+.main-image img {
+  max-width: 1200px;
+  width: 100%;
+  border-radius: 20px;
+}
+.car-section {
+  padding: 50px 80px;
+}
+
+.car-section h2 {
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+.car-cards {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  overflow: hidden;
+}
+
+.car-card {
+  background-color: #6a6a6a;
+  border-radius: 15px;
+  padding: 15px;
+  width: 27%;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.car-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
+.car-card p {
+  margin: 6px 0;
+  font-size: 18px;
+}
+
+.car-card:hover {
+  transform: scale(1.03);
+}
+.more-button {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.more-button button {
+  background-color: white;
+  width: 300px;
+  height: 70px;
+  border: none;
+  border-radius: 90px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.more-button button:hover {
+  background-color: #ccc;
+}

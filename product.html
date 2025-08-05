@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="styles/product.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/cart.css">
+
+</head>
+<body>
+    <header>
+        <div class="bg-img">
+            <div class="container">
+                <nav id="navbar">
+                    <a class="nav-logo">
+                        <img src="images/logo.png" alt="Logo" id="logo" />
+                        <span class="brand-name">Gentles</span>
+                    </a>
+
+                    <ul class="nav-list">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="product.html" style="color: rgb(166, 166, 166);">Products</a></li>
+                        <li><a href="aboutus.html">About</a></li>
+                        <li><a href="ourteam.html">Our Team</a></li>
+                        <li><a href="contactus.html">Contact us</a></li>
+                    </ul>
+
+                    <div class="nav-img">
+                        <a href="#" id="cart-btn">
+                            <img src="images/shopping_bag.svg" alt="shopping bag icon">
+                        </a>
+                        <a href="login.html">
+                            <img src="images/user_profile.svg" alt="user profile icon"> 
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div id="cart-popup" class="cart-popup">
+        <h2>Your Cart</h2>
+        <div id="cart-items"></div>
+        <button id="close-cart">Close</button>
+    </div>
+
+    <div class="padding-nav">
+        <div class="products-container">
+            <div class="product">
+                <div class="image-container">
+                    <span class="car-badge new">New</span>
+                    <img src="images/product1.jpg" alt="Lamborghini Revuelto" class="main-img">
+                    <img src="images/product1_hover.jpg" alt="Lamborghini Revuelto HOVER" class="hover-img">
+                </div>
+                <div class="name">Lamborghini Revuelto</div>
+                <div class="price">4.138.000 RM</div>
+                <div class="rating">★★★★☆ (4.8)</div>
+                <div class="specs">
+                    <ul>
+                        <li><span class="label">Engine:</span> 6.5L V12 + 3 Electric Motors</li>
+                        <li><span class="label">Power:</span> 1,001 hp (combined)</li>
+                        <li><span class="label">Torque:</span> 725 Nm @ 6750 rpm</li>
+                        <li><span class="label">Transmission:</span> 8-speed dual-clutch, paddle shift</li>
+                        <li><span class="label">Acceleration:</span> 0–100 km/h in 2.5 s</li>
+                        <li><span class="label">Top Speed:</span> 350 km/h (217 mph)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="image-container">
+                    <img src="images/product2.webp" alt="Ferrari SF90 Stradale" class="main-img">
+                    <img src="images/product2_hover.jpg" alt="Ferrari SF90 Stradale HOVER" class="hover-img">
+                </div>
+                <div class="name">Ferrari SF90 Stradale</div>
+                <div class="price">2.080.000 RM</div>
+                <div class="rating">★★★★☆ (4.3)</div>
+                <div class="specs">
+                    <ul>
+                        <li><span class="label">Engine:</span> 4.0L V8 Twin-Turbo + 3 Electric Motors</li>
+                        <li><span class="label">Power:</span> 986 hp (735 kW)</li>
+                        <li><span class="label">Torque:</span> 800 Nm (590 lb-ft)</li>
+                        <li><span class="label">Transmission:</span> 8-speed dual-clutch, paddle shift</li>
+                        <li><span class="label">Acceleration:</span> 0–100 km/h in 2.5 s</li>
+                        <li><span class="label">Top Speed:</span> 340 km/h (211 mph)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="image-container">
+                    <span class="car-badge hot">Hot</span>
+                    <img src="images/product3.jpg" alt="McLaren Speedtail" class="main-img">
+                    <img src="images/product3_hover.jpg" alt="McLaren Speedtail HOVER" class="hover-img">
+                </div>
+                <div class="name">McLaren Speedtail</div>
+                <div class="price">10.313.200 RM</div>
+                <div class="rating">★★★★☆ (4.5)</div>
+                <div class="specs">
+                    <ul>
+                        <ul>
+                            <li><span class="label">Engine:</span> 4.0L twin-turbo V8 + electric motor</li>
+                            <li><span class="label">Power:</span> 1,036 hp (1,070 PS)</li>
+                            <li><span class="label">Torque:</span> 1,150 Nm (848 lb-ft)</li>
+                            <li><span class="label">Transmission:</span> Automatic</li>
+                            <li><span class="label">Acceleration:</span> 0–100 km/h in 3.0 s</li>
+                            <li><span class="label">Top Speed:</span> 403 km/h (250 mph)</li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="product">
+                <div class="image-container">
+                    <img src="images/product4.avif" alt="Porsche 911 GT3 RS" class="main-img">
+                    <img src="images/product4_hover.jpg" alt="Porsche 911 GT3 RS Hover" class="hover-img">
+                </div>
+                <div class="name">Porsche 911 GT3 RS</div>
+                <div class="price">2.630.000 RM</div>
+                <div class="rating">★★★★☆ (4.8)</div>
+                <div class="specs">
+                    <ul>
+                        <li><span class="label">Engine:</span> 4.0L naturally aspirated flat-six</li>
+                        <li><span class="label">Power:</span> 518 hp</li>
+                        <li><span class="label">Torque:</span> 342 lb-ft</li>
+                        <li><span class="label">Transmission:</span> 7-speed PDK (dual-clutch)</li>
+                        <li><span class="label">Acceleration:</span> 0–100 km/h in 3.0 s</li>
+                        <li><span class="label">Top Speed:</span> 296 km/h (184 mph)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="image-container">
+                    <img src="images/product5.jpg" alt="Mercedes AMG GT63" class="main-img">
+                    <img src="images/product5_hover.jpg" alt="Mercedes AMG GT63 Hover" class="hover-img">
+                </div>
+                <div class="name">Mercedes AMG GT 63</div>
+                <div class="price">2.088.888 RM</div>
+                <div class="rating">★★★★☆ (4.3)</div>
+                <div class="specs">
+                    <ul>
+                        <li><span class="label">Engine:</span> Handcrafted AMG 4.0L V8 Biturbo</li>
+                        <li><span class="label">Power:</span> 577 hp</li>
+                        <li><span class="label">Torque:</span> 590 lb-ft</li>
+                        <li><span class="label">Transmission:</span> AMG SPEEDSHIFT MCT 9-speed</li>
+                        <li><span class="label">Acceleration:</span> 0–100 km/h in 3.3 s</li>
+                        <li><span class="label">Top Speed:</span> 311 km/h (193 mph)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="image-container">
+                    <img src="images/product6.jpg" alt="Mercedes G63 AMG BRABUS" class="main-img">
+                    <img src="images/product6_hover.avif" alt="Mercedes G63 AMG BRABUS Hover" class="hover-img">
+                </div>
+                <div class="name">Mercedes G63 AMG BRABUS </div>
+                <div class="price">1.790.000 RM</div>
+                <div class="rating">★★★★☆ (4.5)</div>
+                <div class="specs">
+                    <ul>
+                        <li><span class="label">Engine:</span> 4.0L twin-turbo V8 (from AMG G 63)</li>
+                        <li><span class="label">Power:</span> 800 hp (Brabus 800)</li>
+                        <li><span class="label">Torque:</span> 1,000 Nm</li>
+                        <li><span class="label">Transmission:</span> AMG SPEEDSHIFT TCT 9-speed</li>
+                        <li><span class="label">Acceleration:</span> 0–100 km/h in 4.1 s</li>
+                        <li><span class="label">Top Speed:</span> 240 km/h (149 mph)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="image-container">
+                    <span class="car-badge hot">Hot</span>
+                    <img src="images/product7.jpg" alt="Nissan GT-R NISMO 7" class="main-img">
+                    <img src="images/product7_hover.jpg" alt="Nissan GT-R NISMO Hover" class="hover-img">
+                </div>
+                <div class="name">Nissan GT-R NISMO</div>
+                <div class="price">1.580.000 RM</div>
+                <div class="rating">★★★★☆ (4.8)</div>
+                <div class="specs">
+                    <ul>
+                        <li><span class="label">Engine:</span> 3.8L twin-turbocharged V6</li>
+                        <li><span class="label">Power:</span> 600 hp @ 6,800 rpm</li>
+                        <li><span class="label">Torque:</span> 481 lb-ft @ 3,600 rpm</li>
+                        <li><span class="label">Transmission:</span> 6-speed dual-clutch automatic</li>
+                        <li><span class="label">Acceleration:</span> 0–100 km/h in 3.0 s</li>
+                        <li><span class="label">Top Speed:</span> 305 km/h (190+ mph)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="image-container">
+                    <img src="images/product8.webp" alt="Lamborghini Aventador SVJ" class="main-img">
+                    <img src="images/product8_hover.jpg" alt="Lamborghini Aventador SVJ Hover" class="hover-img">
+                </div>
+                <div class="name">Lamborghini Aventador SVJ</div>
+                <div class="price">3.320.000 RM</div>
+                <div class="rating">★★★★☆ (4.7)</div>
+                <div class="specs">
+                    <ul>
+                        <li><span class="label">Engine:</span> 6.5L naturally aspirated V12</li>
+                        <li><span class="label">Power:</span> 770 hp @ 8,500 rpm</li>
+                        <li><span class="label">Torque:</span> 720 Nm (531 lb-ft)</li>
+                        <li><span class="label">Transmission:</span> 7-speed automated manual</li>
+                        <li><span class="label">Acceleration:</span> 0–100 km/h in 2.8 s</li>
+                        <li><span class="label">Top Speed:</span> 350+ km/h (217+ mph)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="image-container">
+                    <span class="car-badge hot">Hot</span>
+                    <img src="images/product9.webp" alt="Product 9" class="main-img">
+                    <img src="images/product9_hover.jpg" alt="Product 9 Hover" class="hover-img">
+                </div>
+                <div class="name">Koenigsegg Agera RS</div>
+                <div class="price">27.000.000 RM</div>
+                <div class="rating">★★★★☆ (4.9)</div>
+                <div class="specs">
+                    <ul>
+                        <li><span class="label">Engine:</span> 5.0L twin-turbocharged V8</li>
+                        <li><span class="label">Power:</span> 1,341 hp</li>
+                        <li><span class="label">Torque:</span> 1,280 Nm (944 lb-ft)</li>
+                        <li><span class="label">Transmission:</span> 7-speed automated manual</li>
+                        <li><span class="label">Acceleration:</span> 0–100 km/h in 2.8 s</li>
+                        <li><span class="label">Top Speed:</span> 400+ km/h (249+ mph)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="image-container">
+                    <img src="images/product10.webp" alt="McLaren Senna" class="main-img">
+                    <img src="images/product10_hover.jpg" alt="McLaren Senna Hover" class="hover-img">
+                </div>
+                <div class="name">McLaren Senna</div>
+                <div class="price">6,460,000 RM</div>
+                <div class="rating">★★★★☆ (4.8)</div>
+                <div class="specs">
+                    <ul>
+                        <li><span class="label">Engine:</span> 4.0L twin-turbocharged V8</li>
+                        <li><span class="label">Power:</span> 800 PS (789 bhp)</li>
+                        <li><span class="label">Torque:</span> 800 Nm</li>
+                        <li><span class="label">Transmission:</span> 7-speed dual-clutch automatic</li>
+                        <li><span class="label">Acceleration:</span> 0–100 km/h in 2.8 s</li>
+                        <li><span class="label">Top Speed:</span> 335 km/h (208 mph)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="image-container">
+                    <span class="car-badge new">New</span>
+                    <img src="images/product11.webp" alt="Bugatti Tourbillion" class="main-img">
+                    <img src="images/product11_hover.jpg" alt="Bugatti Tourbillion Hover" class="hover-img">
+                </div>
+                <div class="name">Bugatti Tourbillion</div>
+                <div class="price">19.500.000 RM</div>
+                <div class="rating">★★★★☆ (4.8)</div>
+                <div class="specs">
+                    <ul>
+                        <li><span class="label">Engine:</span> 8.3L naturally aspirated V16 + 3 electric motors</li>
+                        <li><span class="label">Power:</span> 1,800 hp (combined)</li>
+                        <li><span class="label">Torque:</span> 900 Nm (engine only)</li>
+                        <li><span class="label">Transmission:</span> 8-speed dual-clutch automatic</li>
+                        <li><span class="label">Acceleration:</span> 0–100 km/h in 2.0 s</li>
+                        <li><span class="label">Top Speed:</span> 445 km/h (276 mph) with Speed Key</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="image-container">
+                    <img src="images/product12.jpg" alt="Koenigsegg Jesko" class="main-img">
+                    <img src="images/product12_hover.jpg" alt="Koenigsegg Jesko Hover" class="hover-img">
+                </div>
+                <div class="name">Koenigsegg Jesko</div>
+                <div class="price">14.000.000 RM</div>
+                <div class="rating">★★★★☆ (4.7)</div>
+                <div class="specs">
+                    <ul>
+                        <li><span class="label">Engine:</span> 5.0L twin-turbocharged V8</li>
+                        <li><span class="label">Power:</span> 1,600 hp (on E85)</li>
+                        <li><span class="label">Torque:</span> 1,500 Nm @ 5,100 rpm</li>
+                        <li><span class="label">Transmission:</span> 9-speed Koenigsegg LST</li>
+                        <li><span class="label">Acceleration:</span> 0–100 km/h in 2.5 s</li>
+                        <li><span class="label">Top Speed:</span> 482+ km/h (300+ mph, estimated)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-section stay-updated">
+            <h2>STAY UPDATED</h2>
+            <p>Don’t miss out on any exclusive offers. Keep in <br> touch through our newsletter.</p>
+            <div class="email-input">
+                <form>
+                    <input type="email" placeholder="Your Email Address">
+                    <button type="submit"><span>→</span></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-section policy-section">
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Accessibility</a>
+                <a href="#">Shopping Policy</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Refund Policy</a>
+            </div>
+        </div>
+        <div class="footer-icons">
+            <img src="images/facebook.png" alt="Facebook">
+            <img src="images/twitter.png" alt="Twitter">
+            <img src="images/instagram.png" alt="Instagram">
+            <img src="images/tiktok.png" alt="tiktok">
+        </div>
+    </footer>
+    <script src="scripts/nav_bar.js"></script>
+    <script src="scripts/auth.js"></script>
+    <script src="scripts/product.js"></script>
+
+</body>
+</html>

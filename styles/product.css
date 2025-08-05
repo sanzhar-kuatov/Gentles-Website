@@ -1,0 +1,146 @@
+.products-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px 20px;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+
+.product {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 15px;
+  width: 300px;
+  text-align: left;
+  position: relative;
+  background-color: #ffffff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.product .specs {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.6s ease, opacity 0.6s ease, padding 0.6s ease;
+  padding-top: 10px;
+}
+
+.specs {
+  padding-top: 10px;
+}
+
+.specs ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.specs li {
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: #333;
+  display: flex;
+  gap: 10px;
+}
+
+.specs .label {
+  font-weight: 600;
+  color: #000;
+  min-width: 110px;
+  display: inline-block;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.car-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #3cd4ae;
+  color: white;
+  padding: 5px 10px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 5px;
+  text-transform: uppercase;
+  z-index: 2;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.car-badge.hot {
+  background-color: #e97508;
+}
+
+.product img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.product .main-img {
+  position: relative;
+  z-index: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.product .hover-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  transform: scale(1.02);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.product:hover {
+  height: 500px;
+  transform: scale(1.03);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.product:hover .specs {
+  opacity: 1;
+  max-height: 300px;
+  padding-top: 10px;
+}
+
+.product:hover .main-img {
+  opacity: 0;
+}
+
+.product:hover .hover-img {
+  opacity: 1;
+}
+
+.product .name {
+  padding-top: 10px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.product .price {
+  color: #888;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.product .rating {
+  margin-top: 6px;
+  font-size: 15px;
+  color: #444;
+}

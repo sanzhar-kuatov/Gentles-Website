@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles/login.css">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login-section">
+            <div class="logo">
+                <img src="images/logo.png" alt="Logo" id="logo">
+                <span class="brand-name"><a href="home.html">Gentles</a></span>
+            </div>
+            <div class="login">
+            <h2>Login</h2>
+            <p>Enter your details to access your account.</p>
+            <form onsubmit="login(); return false;">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="Enter email" required>
+
+                <div class="password-wrapper">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter Password" required>
+                    <img src="images/eye-password-see-view-svgrepo-com.svg" class="toggle-eye" onclick="togglePassword('password', this)">
+                </div>
+
+                <div class="options">
+                    <label><input type="checkbox" id="rememberMe">Remember me</label>
+                    <a href="forgotpassword.html">Forgot Password?</a>
+                </div>
+
+                <button type="submit">SIGN IN</button>
+                <p class="signup">Don't have an account? <a href="register.html">Sign up</a></p>
+            </form>
+        </div>
+        </div>
+        <div class="image-selection">
+            <img src="images/image (2).png" alt="car image">
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-section stay-updated">
+            <h2>STAY UPDATED</h2>
+            <p>Don’t miss out on any exclusive offers. Keep in <br> touch through our newsletter.</p>
+            <div class="email-input">
+                <form>
+                    <input type="email" placeholder="Your Email Address">
+                    <button type="submit"><span>→</span></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-section policy-section">
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Accessibility</a>
+                <a href="#">Shopping Policy</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Refund Policy</a>
+            </div>
+        </div>
+        <div class="footer-icons">
+            <img src="images/facebook.png" alt="Facebook">
+            <img src="images/twitter.png" alt="Twitter">
+            <img src="images/instagram.png" alt="Instagram">
+            <img src="images/tiktok.png" alt="tiktok">
+        </div>
+    </footer>
+    <script src="scripts/login.js"></script>
+</body>
+</html>

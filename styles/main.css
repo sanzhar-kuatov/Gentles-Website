@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  background: linear-gradient(to right, #192027, #000000);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  transition: background-color 0.3s;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+#logo {
+  display: block;
+  width: auto;
+  height: 50px;
+}
+
+.brand-name {
+  color: white;
+  font-size: 18px;
+  font-weight: 200;
+  margin: 0;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 2;
+  padding: 0;
+  margin: 0 auto;
+  gap: 30px;
+  flex-grow: 1;
+}
+
+.nav-list li {
+  margin: 0 15px;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  transition: color 0.3s;
+  text-align: center;
+}
+
+#navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  transition: background-color 0.3s;
+}
+
+#navbar.scrolled {
+  background-color: #000000;
+  transition: background-color 0.3s ease;
+}
+
+nav:hover {
+  background-color: rgb(0, 0, 0);
+}
+
+nav:hover li a {
+  color: rgb(255, 255, 255);
+}
+
+.nav-list li a:hover {
+  color: rgb(113, 110, 110);
+}
+
+.nav-img {
+  display: flex;
+  align-items: center;
+  padding: 3px;
+  margin: 0;
+}
+
+.nav-img a {
+  margin-left: 15px;
+}
+
+.nav-img img {
+  padding: 10px;
+}
+
+.nav-img img:hover {
+  opacity: 0.7;
+}
+
+.padding-nav {
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+/* Footer */
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #e0e0e0;
+  padding: 1.5em;
+}
+
+.footer .footer-section {
+  flex: 1 1 200px;
+  padding: 1rem;
+}
+
+@media (max-width: 768px) {
+  .footer .footer-section {
+    flex: 1 1 200px;
+    padding: 1rem;
+    text-align: left;
+  }
+}
+
+.footer a {
+  display: block;
+  font-size: 1.2em;
+  color: #000;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-links a {
+  color: rgb(116, 116, 116);
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.footer-links a:hover {
+  color: black;
+  transition: transform 0.3s ease;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-icons img {
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.footer-icons img:hover {
+  opacity: 0.7;
+}
+
+.stay-updated {
+  flex: 2;
+}
+
+.policy-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.email-input {
+  display: inline-flex;
+  align-items: center;
+  border: 2px solid;
+  border-radius: 15px;
+  overflow: hidden;
+  max-width: 20em;
+  width: 100%;
+}
+
+.email-input input {
+  flex: 1;
+  border: none;
+  padding: 20px 20px;
+  border-radius: 15px 0 0 15px;
+  outline: none;
+  font-size: 16px;
+  color: #000000;
+}
+
+.email-input button {
+  background-color: white;
+  border: none;
+  border-left: 1px solid #ccc;
+  padding: 12px 20px;
+  cursor: pointer;
+  outline: none;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 15px 15px 0;
+}
+
+.email-input button:hover {
+  background-color: #c5c2c2;
+}
+
+.email-input span {
+  font-size: 30px;
+  color: black;
+}
+
+.email-input form {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .footer .footer-section {
+    flex: 1 1 200px;
+    padding: 1rem;
+    text-align: left;
+  }
+  .footer-icons {
+    width: 100%;
+    justify-content: center;
+    padding-top: 20px;
+  }
+  .stay-updated {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .stay-updated h2,
+  p {
+    text-align: center;
+  }
+}

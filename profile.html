@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<meta charset="UTF-8">
+		<title>Gentles - Products</title>
+		<link rel="stylesheet" href="styles/main.css">
+		<link rel="stylesheet" href="styles/profile.css">
+	</head>
+	<body style="background-color: black;">
+		<header>
+        <div class="bg-img">
+            <div class="container">
+                <nav id="navbar">
+                    <a class="nav-logo">
+                        <img src="images/logo.png" alt="Logo" id="logo" />
+                        <span class="brand-name">Gentles</span>
+                    </a>
+
+                    <ul class="nav-list">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="product.html">Products</a></li>
+                        <li><a href="aboutus.html">About</a></li>
+						<li><a href="ourteam.html">Our Team</a></li>
+                        <li><a href="contactus.html">Contact us</a></li>
+                    </ul>
+
+                    <div class="nav-img">
+                        <a href="#">
+                            <img src="images/shopping_bag.svg" alt="shopping bag icon">
+                        </a>
+                        <a href="login.html">
+                            <img src="images/user_profile.svg" alt="user profile icon"> 
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+		<div id="id_parentDiv">
+			<div class="c_childDiv">
+				<div class="c_childDiv_Container" style="color: rgb(213, 220, 226);">
+					<h2>Basic Information</h2>
+					<dl>
+						<div class="info_row">
+							<dt class="label">Fullname</dt>
+							<dd class="value" id="profile-fullname"></dd>
+						</div>
+						
+						<div class="info_row">
+							<dt class="label">Username</dt>
+							<dd class="value" id="profile-username"></dd>
+						</div>
+
+						<div class="info_row">
+							<dt class="label">Email Address</dt>
+							<dd class="value" id="profile-email"></dd>
+						</div>
+
+						<div class="info_row">
+							<dt class="label">Address</dt>
+							<dd class="value" id="profile-address"></dd>
+						</div>
+					</dl>
+					<hr>
+					<h2>Additional Information</h2>
+					<dl>
+						<div class="info_row">
+							<dt class="label">Gender</dt>
+							<dd class="value" id="profile-gender"></dd>
+						</div>
+
+						<div class="info_row">
+							<dt class="label">Data-Of-Birth</dt>
+							<dd class="value"id="profile-dob"></dd>
+						</div>
+
+						<div class="info_row">
+							<dt class="label">Nationality</dt>
+							<dd class="value" id="profile-nationality"></dd>
+						</div>
+
+						<div class="info_row">
+							<dt class="label">Phone-Number</dt>
+							<dd class="value" id="profile-phone"></dd>
+						</div>
+					</dl>
+					<div style="margin-top: 20px;">
+						<button id="editBtn">Edit Profile</button>
+						<button id="saveBtn" style="display: none;">Save</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="c_imageDiv">
+				<img src="images/CarImage.png" alt="Car Banner image">
+			</div>
+		</div>
+
+	<footer class="footer">
+        <div class="footer-section stay-updated">
+            <h2>STAY UPDATED</h2>
+            <p>Don’t miss out on any exclusive offers. Keep in <br> touch through our newsletter.</p>
+            <div class="email-input">
+                <form>
+                    <input type="email" placeholder="Your Email Address">
+                    <button type="submit"><span>→</span></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-section policy-section">
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Accessibility</a>
+                <a href="#">Shopping Policy</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Refund Policy</a>
+            </div>
+        </div>
+        <div class="footer-icons">
+            <img src="images/facebook.png" alt="Facebook">
+            <img src="images/twitter.png" alt="Twitter">
+            <img src="images/instagram.png" alt="Instagram">
+            <img src="images/tiktok.png" alt="tiktok">
+        </div>
+    </footer>
+		<script src="scripts/nav_bar.js"></script>
+		<script src="scripts/profile.js"></script>
+	</body>
+</html>

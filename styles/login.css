@@ -1,0 +1,374 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=McLaren&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+body, html {
+    background: linear-gradient(to right, #192027, #000000);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1600px;
+    height: 710px;
+    border-radius: 5px;
+    margin: 0 auto;
+    overflow: hidden;
+    gap: 0;
+}
+
+.login-section {
+    flex: 1;
+    background-color: linear-gradient(to right, #192027, #000000);
+    color: white;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 175px;
+}
+
+.login {
+  margin-left: 50px;
+}
+
+.logo {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    margin-bottom: 20px;
+    top: 20px;
+
+}
+
+.logo img#logo{
+    height: 50px;
+}
+
+.brand-name {
+    font-size: 32px;
+    color: white;
+    font-weight: 200;
+    margin: 0;
+}
+
+.brand-name a {
+  text-decoration: none;
+  color: white;
+}
+
+.container h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-family: "McLaren", sans-serif;
+    font-weight: 400;
+}
+
+.container p {
+    margin-bottom: 20px;
+    color: #ccc;
+}
+
+.login-section label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.login-section input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: none;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.login-section input[type="password"] {
+    width:100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: none;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.options a {
+    color: #4da8ff;
+    text-decoration: underline;
+}
+
+.options input [type="checkbox"] {
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.password-wrapper {
+  position: relative;
+  width: 100%;
+  grid-column: span 2;
+}
+
+.password-wrapper input[type="password"],
+.password-wrapper input[type="text"] {
+  width: 100%;
+  padding: 10px 40px 10px 10px; 
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: none;
+  font-size: 14px;
+  line-height: 1.5; 
+}
+
+.toggle-eye {
+  position: absolute;
+  right: 10px;
+  top: 58%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.2s;
+  align-items: center;
+  justify-content: center;
+}
+
+.toggle-eye:hover {
+  opacity: 1;
+}
+
+button {
+    width:100%;
+    padding: 12px;
+    font-size: 16px;
+    background-color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button, .btn-primary {
+  background-color: white;
+  color: black;
+  transition: background-color 0.3s;
+}
+
+button:hover, .btn-primary:hover {
+  background-color: #e0e0e0;
+}
+
+.signup {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.signup a {
+  color: #4da8ff;
+  text-decoration: underline;
+}
+
+.image-selection {
+    flex: 1;
+}
+
+.image-selection img {
+  float: right;
+  width: 80%;
+  height: 79%;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .login-section {
+    width: 100%;
+  }
+
+  .image-selection img {
+    display: none;
+  }
+
+  .password-wrapper {
+    grid-column: span 1;
+  }
+
+  .login-section {
+    padding-top: 100px; 
+  }
+
+  .login {
+    margin-right: 50px;
+  }
+
+  .logo {
+    top: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width:1024px) {
+  .login-section {
+    margin-top: 100px;
+  }
+
+  .image-selection img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+/* footer */
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #e0e0e0;
+  padding: 1.5em;
+  max-width: 1600px;
+  width: 100%;
+}
+
+.footer .footer-section {
+  flex: 1 1 200px;
+  padding: 1rem;
+}
+
+@media (max-width: 768px) {
+  .footer .footer-section {
+    flex: 1 1 200px;
+    padding: 1rem;
+    text-align: left;
+  }
+}
+
+.footer a {
+  display: block;
+  font-size: 1.2em;
+  color: #000;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-links a {
+  color: rgb(116, 116, 116);
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.footer-links a:hover {
+  color: black;
+  transition: transform 0.3s ease;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-icons img {
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.footer-icons img:hover {
+  opacity: 0.7;
+}
+
+.stay-updated {
+  flex: 2;
+}
+
+.policy-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.email-input {
+  display: inline-flex;
+  align-items: center;
+  border: 2px solid;
+  border-radius: 15px;
+  overflow: hidden;
+  max-width: 20em;
+  width: 100%;
+}
+
+.email-input input {
+  flex: 1;
+  border: none;
+  padding: 20px 20px;
+  border-radius: 15px 0 0 15px;
+  outline: none;
+  font-size: 16px;
+  color: #000000;
+}
+
+.email-input button {
+  background-color: white;
+  border: none;
+  border-left: 1px solid #ccc;
+  padding: 12px 20px;
+  cursor: pointer;
+  outline: none;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 15px 15px 0;
+}
+
+.email-input button:hover {
+  background-color: #c5c2c2;
+}
+
+.email-input span {
+  font-size: 30px;
+  color: black;
+}
+
+.email-input form {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}

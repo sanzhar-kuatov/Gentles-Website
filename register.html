@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="styles/register.css">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="register-section">
+            <div class="logo">
+                <img src="images/logo.png" alt="Logo" id="logo">
+                <span class="brand-name"><a href="home.html">Gentles</a></span>
+            </div>
+            <div class="register">
+            <h2>Register</h2>
+            <p>Already have an account? <a href=login.html>Sign in</a></p>
+                <form id="register-form">
+                    <div class="formgrid">
+                        <label for="firstname">First Name</label>
+                        <input type="text" id="firstname" placeholder="Enter your First Name" required>
+
+                        <label for="lastname">Last Name</label>
+                        <input type="text" id="lastname" placeholder="Enter your Last Name" required>
+
+                        <label for="mobilenumber">Mobile Number</label>
+                        <input type="tel" id="mobilenumber" inputmode="numeric" placeholder="Enter your Mobile Number" required>
+                        <div id="phoneerror" class="error"></div>
+
+                        <label for="emailaddress">Email Address</label>
+                        <input type="email" id="emailaddress" placeholder="Enter your Email Address" required>
+                        
+                        <label for="password">Password</label>
+                        <div class="password-wrapper">
+                        <input type="password" id="password" placeholder="Enter Password" required>
+                        <img src="images/eye-password-see-view-svgrepo-com.svg" class="toggle-eye" onclick="togglePassword('password', this)">
+                        </div>
+
+                        <label for="confirmpassword">Confirm Password</label>
+                        <div class="password-wrapper">
+                        <input type="password" id="confirmpassword" placeholder="Re-enter Password" required>
+                        <img src="images/eye-password-see-view-svgrepo-com.svg" class="toggle-eye" onclick="togglePassword('confirmpassword', this)">
+                        </div>
+                        <div id="passworderror" class="error"></div>
+                    </div>
+                    <div class="checkbox">
+                        <label><input type="checkbox" required />I agree to all <a href="/terms" target="_blank">Terms</a> and <a href="/privacy" target="_blank">Privacy Policy</a>.</label>
+                    </div>
+                    <button type="submit">Create Account</button>
+                </form>
+            </div>
+            </div>
+            <div class="image-selection">
+                <img src="images/image (1).png" alt="car image">
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-section stay-updated">
+            <h2>STAY UPDATED</h2>
+            <p>Don’t miss out on any exclusive offers. Keep in <br> touch through our newsletter.</p>
+            <div class="email-input">
+                <form>
+                    <input type="email" placeholder="Your Email Address">
+                    <button type="submit"><span>→</span></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-section policy-section">
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Accessibility</a>
+                <a href="#">Shopping Policy</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Refund Policy</a>
+            </div>
+        </div>
+        <div class="footer-icons">
+            <img src="images/facebook.png" alt="Facebook">
+            <img src="images/twitter.png" alt="Twitter">
+            <img src="images/instagram.png" alt="Instagram">
+            <img src="images/tiktok.png" alt="tiktok">
+        </div>
+    </footer>
+    <script src="scripts/register.js"></script>
+</body>
+</html>
